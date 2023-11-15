@@ -10,7 +10,11 @@ const pixelFont = Press_Start_2P({
 	display: 'swap'
 })
 
-export function Navbar(props){
+interface NavbarProps {
+  menu: string
+}
+
+export function Navbar(props : NavbarProps){
 	const [isHoveringHome, setIsHoveredHome] = useState(false);
 	const [isHoveringWalkthrough, setIsHoveredWalkthrough] = useState(false);
 	const [isHoveringItems, setIsHoveredItems] = useState(false);
@@ -18,7 +22,7 @@ export function Navbar(props){
 	const [isHoveringAbilities, setIsHoveredAbilities] = useState(false);
 
 	return(
-		<nav className={`${pixelFont.className} ml-14 mt-16 w-auto h-fit bg-[#505251] rounded-md border-4 border-gray-300 text-white text-sm`}>
+		<nav className={`${pixelFont.className} sticky top-8 ml-14 mt-16 w-auto h-fit bg-[#505251] rounded-md border-4 border-gray-300 text-white text-sm`}>
 			<ul className="space-y-8">
 				<a href="/" onMouseEnter={() => setIsHoveredHome(true)} onMouseLeave={() => setIsHoveredHome(false)}>
 					{isHoveringHome && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}

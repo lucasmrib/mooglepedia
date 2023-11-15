@@ -9,7 +9,13 @@ const pixelFont = Press_Start_2P({
     display: 'swap'
 })
 
-export function ItemCard(props){
+interface ItemCardProps {
+  name: string,
+  description: string | null,
+  effect: string | null,
+}
+
+export function ItemCard(props : ItemCardProps){
 	return (
         <div className="rounded-md border-4 border-gray-300 space-y-4 bg-[#5e605f]">
             <header className={`${pixelFont.className} inline-flex items-center gap-4 w-full pl-8 pr-8 p-4 bg-[#505251] text-sm`}>

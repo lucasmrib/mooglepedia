@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export function Header(){
 	return(
-		<header className={`${inter.className} flex items-center justify-between px-56 py-12 bg-gray-100 text-black`}>
+		<header className={`${inter.className} flex items-center justify-between px-32 py-12 bg-gray-100 text-black`}>
 			<a href="/" className="flex row items-center gap-4">
 				<Image src="/logo.png" width={50} height={60} alt="Logo" />
 				<div>
