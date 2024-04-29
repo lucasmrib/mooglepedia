@@ -1,23 +1,41 @@
-import { Navbar } from '@/components/navbar'
-import { ItemCard } from '@/components/item-card'
-import { PrismaClient } from '@prisma/client'
+"use client"
 
-export default async function Items() {
+import useSWR from 'swr'
+import Image from 'next/image'
 
-    const prisma = new PrismaClient()
-    const items = await prisma.items.findMany()
+const fetcher: Fetcher<any> = (...args) => fetch([...args]).then((res) => res.json())
 
-    return (
-        <main className="flex min-h-screen">
-            <Navbar menu="items"/>
-            <div className="mx-14 my-16 w-full h-fit text-white space-y-8">
-                {items.map(item => <ItemCard 
-                    key={item.item_id}
-                    name={item.name}
-                    description={item.description}
-                    effect={item.effect}/>
-                )}
-            </div>
-        </main>
-    )
+export default function Items() {
+
+  const { data, error } = useSWR('/data/items.json', fetcher)
+
+  if (error) return <div className="font-inter m-auto text-white">Failed to load</div>
+  if (!data) return <div className="font-inter m-auto text-white">Loading...</div>
+
+  return (
+    <div className="mx-14 mb-16 w-full h-fit text-white space-y-8">
+      {data.items.map((item) => (
+        <div key={item.id} className="rounded-md border-4 border-gray-300 space-y-4 bg-[#5e605f]">
+          <header className="font-pixel inline-flex items-center gap-4 w-full pl-8 pr-8 p-4 bg-[#505251] text-sm">
+            <Image
+              src={`/img/items/${item.name}.png`}
+              width={30}
+              height={30}
+              alt={`${item.name} Icon`}
+              className="object-contain w-auto h-auto"
+            />
+            {item.name}
+          </header>
+          <p className="pl-8 pr-8">
+            <b>Description: &emsp;</b>
+            {item.description} <br/>
+          </p>
+          <p className="pl-8 pr-8 pb-4">
+            <b>Effect: &emsp;</b>
+            {item.effect}
+          </p>
+        </div>
+      ))}
+    </div>
+	)
 }

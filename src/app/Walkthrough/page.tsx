@@ -1,9 +1,9 @@
-import { Navbar } from '@/components/navbar'
+
 
 export default function Walkthrough() {
-    return (
-        <main className="flex min-h-screen">
-            <Navbar menu="walkthrough"/>
-        </main>
-    )
+  return (
+    <div className="mx-14 mb-16 w-full h-fit text-white space-y-8">
+	    Walkthrough
+	  </div>
+  )
 }

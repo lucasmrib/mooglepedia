@@ -6,7 +6,14 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        "pixel": ['"Press Start 2P", system-ui'],
+        "inter": ['Inter', 'sans-serif'],
+      },
+    },
+  },
   plugins: [],
 }
 export default config

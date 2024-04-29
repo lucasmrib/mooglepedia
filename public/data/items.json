@@ -1,0 +1,35 @@
+{
+	"items":
+	[
+		{
+			"id": 1,
+			"name": "Potion",
+			"description": "Restores 150 HP. The effect decreases if used in the field.",
+			"effect": "Restores 150 HP in battle and 100 HP in the field."
+		},
+		{
+			"id": 2,
+			"name": "Hi-Potion",
+			"description": "Restores 450 HP. The effect decreases if used in the field.",
+			"effect": "Restores 450 HP in battle and 300 HP in the field."
+		},
+		{
+			"id": 3,
+			"name": "Phoenix Down",
+			"description": "Cures KO.",
+			"effect": "Revives a character from being KO’ed."
+		},
+		{
+			"id": 4,
+			"name": "Phoenix Pinion",
+			"description": "Cures KO. It cannot be used in the field.",
+			"effect": "Revives a character from being KO’ed but can only be used in battle."
+		},
+		{
+			"id": 5,
+			"name": "Elixir",
+			"description": "Fully restores HP and MP.",
+			"effect": "Fully restores the HP and MP of a single character no matter how low they are."
+		}
+	]
+}

@@ -1,50 +1,68 @@
 "use client"
 
-import React, { useState } from 'react';
-import { Press_Start_2P } from 'next/font/google'
+import { useState } from 'react';
 import Image from 'next/image'
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
-const pixelFont = Press_Start_2P({ 
-	weight: ['400'],
-	subsets: ['latin'],
-	display: 'swap'
-})
+const navItems = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/Items",
+    name: "Items",
+  },
+  {
+    path: "/Equipments",
+    name: "Equipments",
+  },
+  {
+    path: "/Abilities",
+    name: "Abilities",
+  },
+  {
+  	path: "/Walkthrough",
+  	name: "Walkthrough",
+  },
+];
 
-interface NavbarProps {
-  menu: string
-}
+export function Navbar(){
 
-export function Navbar(props : NavbarProps){
-	const [isHoveringHome, setIsHoveredHome] = useState(false);
-	const [isHoveringWalkthrough, setIsHoveredWalkthrough] = useState(false);
-	const [isHoveringItems, setIsHoveredItems] = useState(false);
-	const [isHoveringEquipments, setIsHoveredEquipments] = useState(false);
-	const [isHoveringAbilities, setIsHoveredAbilities] = useState(false);
+	let pathname = usePathname() || "/";
+	const [hoveredItem, setHoveredItem] = useState(null);
 
 	return(
-		<nav className={`${pixelFont.className} sticky top-8 ml-14 mt-16 w-auto h-fit bg-[#505251] rounded-md border-4 border-gray-300 text-white text-sm`}>
-			<ul className="space-y-8">
-				<a href="/" onMouseEnter={() => setIsHoveredHome(true)} onMouseLeave={() => setIsHoveredHome(false)}>
-					{isHoveringHome && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}
-					<li className={`pl-16 pr-8 p-4 ${props.menu == "home" && "bg-[#5e605f]"}`}>Home</li>
-				</a>
-				<a href="/Walkthrough" onMouseEnter={() => setIsHoveredWalkthrough(true)} onMouseLeave={() => setIsHoveredWalkthrough(false)}>
-					{isHoveringWalkthrough && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}
-					<li className={`pl-16 pr-8 p-4 ${props.menu == "walkthrough" && "bg-[#5e605f]"}`}>Walkthrough</li>
-				</a>
-				<a href="/Items" onMouseEnter={() => setIsHoveredItems(true)} onMouseLeave={() => setIsHoveredItems(false)}>
-					{isHoveringItems && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}
-					<li className={`pl-16 pr-8 p-4 ${props.menu == "items" && "bg-[#5e605f]"}`}>Items</li>
-				</a>
-				<a href="/Equipments" onMouseEnter={() => setIsHoveredEquipments(true)} onMouseLeave={() => setIsHoveredEquipments(false)}>
-					{isHoveringEquipments && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}
-					<li className={`pl-16 pr-8 p-4 ${props.menu == "equipments" && "bg-[#5e605f]"}`}>Equipments</li>
-				</a>
-				<a href="/Abilities" onMouseEnter={() => setIsHoveredAbilities(true)} onMouseLeave={() => setIsHoveredAbilities(false)}>
-					{isHoveringAbilities && <Image className="absolute pt-3 pl-2" src="/hereIcon.png" width={50} height={60} alt="Here Icon"/>}
-					<li className={`pl-16 pr-8 p-4 ${props.menu == "abilities" && "bg-[#5e605f]"}`}>Abilities</li>
-				</a>
-			</ul>
+		<nav className="font-pixel flex flex-col sticky top-8 ml-14 w-auto h-fit bg-[#505251] rounded-md border-4 border-gray-300 text-white text-sm">
+
+			{navItems.map((item, index) => {
+        const isActive = item.path === pathname;
+        
+        return (
+          <Link
+            key={item.name}
+            className={`relative pl-16 pr-8 py-4 ${
+              isActive ? "bg-[#5e605f]" : ""
+            }`}
+            data-active={isActive}
+            href={item.path}
+            onMouseOver={() => setHoveredItem(item.name)}
+            onMouseLeave={() => setHoveredItem(null)}
+          >
+            {hoveredItem === item.name && (
+              <Image
+              	className="absolute top-2 left-2"
+              	src="/hereIcon.png"
+              	width={50}
+              	height={60}
+              	alt="Here Icon"
+              />
+            )}
+            <span>{item.name}</span>
+          </Link>
+        );
+      })}
 		</nav>
 	)
 }

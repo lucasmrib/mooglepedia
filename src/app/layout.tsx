@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Header } from '@/components/header'
+import { Navbar } from '@/components/navbar'
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#2e3136]">
         <Header/>
-        {children}
+          <main className="flex h-fit pt-16">
+            <Navbar />
+            {children}
+          </main>
       </body>
     </html>
   )

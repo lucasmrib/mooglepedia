@@ -1,9 +1,8 @@
-import { Navbar } from '@/components/navbar'
 
 export default function Equipments() {
-    return (
-        <main className="flex min-h-screen">
-            <Navbar menu="equipments"/>
-        </main>
-    )
+  return (
+    <div className="mx-14 mb-16 w-full h-fit text-white space-y-8">
+      Equipments
+    </div>
+  )
 }

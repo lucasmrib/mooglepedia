@@ -1,22 +1,20 @@
-import { Inter } from 'next/font/google'
 import Image from 'next/image'
-
-const inter = Inter({ subsets: ['latin'] })
+import Link from "next/link";
 
 export function Header(){
 	return(
-		<header className={`${inter.className} flex items-center justify-between px-32 py-12 bg-gray-100 text-black`}>
-			<a href="/" className="flex row items-center gap-4">
-				<Image src="/logo.png" width={50} height={60} alt="Logo" />
+		<header className="font-inter flex items-center justify-between px-32 py-12 bg-gray-100 text-black">
+			<Link href="/" className="flex row items-center gap-4">
+				<Image src="/logo.png" width={48} height={75} alt="Logo" priority />
 				<div>
 					<span className="text-3xl font-bold cursor-pointer select-none">MooglePedia</span>
 					<p>A wikipedia for Final Fantasy IX players</p>
 				</div>
-			</a>
+			</Link>
 			<div className="flex justify-between gap-8 font-bold">
-				<a href="/about">About</a>
-				<a href="/support">Support</a>
-				<a href="/contact">Contact</a>
+				<Link href="/about">About</Link>
+				<Link href="/support">Support</Link>
+				<Link href="/contact">Contact</Link>
 			</div>
 		</header>
 	)
