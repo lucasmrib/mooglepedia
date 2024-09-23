@@ -17,19 +17,91 @@
 			"id": 3,
 			"name": "Phoenix Down",
 			"description": "Cures KO.",
-			"effect": "Revives a character from being KO’ed."
+			"effect": "Revives a character from being KO'ed."
 		},
 		{
 			"id": 4,
 			"name": "Phoenix Pinion",
 			"description": "Cures KO. It cannot be used in the field.",
-			"effect": "Revives a character from being KO’ed but can only be used in battle."
+			"effect": "Revives a character from being KO'ed but can only be used in battle."
 		},
 		{
 			"id": 5,
 			"name": "Elixir",
 			"description": "Fully restores HP and MP.",
 			"effect": "Fully restores the HP and MP of a single character no matter how low they are."
+		},
+                {
+			"id": 6,
+			"name": "Annoyntment",
+			"description": "Cures Trouble.",
+			"effect": "Gets rid of the Trouble negative status effect from a single character."
+		},
+                {
+			"id": 7,
+			"name": "Antidote",
+			"description": "Cures Venom and Poison.",
+			"effect": "Gets rid of the Venom and Poison negative status effects from a single character."
+		},
+                {
+			"id": 8,
+			"name": "Soft",
+			"description": "Cures Petrify and Gradual Petrify.",
+			"effect": "Gets rid of the Petrify and Gradual Petrify negative status effect from a single character."
+		},
+                {
+			"id": 9,
+			"name": "Gysahl Greens",
+			"description": "Cures Berserk. Item has no effect in the field. Chocobo’s favorite food.",
+			"effect": "Gets rid of the Berserk negative status effect from a single character and can be used to summon a Chocobo on the main map."
+		},
+                {
+			"id": 10,
+			"name": "Dead Pepper",
+			"description": "Deals damage to the target. If you give it to a Chocobo…",
+			"effect": "Can be used to have Choco open Mountain Cracks, dive into Dive Spots and fly up to the Chocobo’s Air Garden."
+		},
+                {
+			"id": 11,
+			"name": "Eye Drops",
+			"description": "Cures Darkness.",
+			"effect": "Gets rid of the Darkness negative status effect from a single character."
+		},
+                {
+			"id": 12,
+			"name": "Echo Screen",
+			"description": "Cures Silence.",
+			"effect": "Gets rid of the Silence negative status effect from a single character."
+		},
+                {
+			"id": 13,
+			"name": "Vaccine",
+			"description": "Cures Virus.",
+			"effect": "Gets rid of the Virus negative status effect from a single character."
+		},
+                {
+			"id": 14,
+			"name": "Magic Tag",
+			"description": "Cures Zombie.",
+			"effect": "Gets rid of the Zombie negative status effect from a single character."
+		},
+                {
+			"id": 15,
+			"name": "Remedy",
+			"description": "Cures various status abnormalities.",
+			"effect": "Gets rid of the Darkness, Gradual Petrify, Mini, Poison, Silence, Stop and Venom negative status effect from a single character."
+		},
+                {
+			"id": 16,
+			"name": "Ether",
+			"description": "Restores 150 MP. The effect decreases if used in the field.",
+			"effect": "Restores 150 MP in battle and 100 MP in the field."
+		},
+                {
+			"id": 17,
+			"name": "Tent",
+			"description": "Restores HP and MP. If you ask a save Moogle, he will restore everyone’s HP and MP.",
+			"effect": "Can be used when speaking to a Moogle or on the field. Restores a large amount of HP and MP and can be used to cure Darkness, Poison and Silence negative status effects."
 		}
 	]
 }

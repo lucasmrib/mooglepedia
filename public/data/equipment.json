@@ -1,0 +1,200 @@
+{
+    "equipments":
+    [{
+        "id": 1,
+        "name": "Adaman Hat",
+        "type": "head",
+        "description": "Extremely durable hat.",
+        "effect": "Elem-Def: Thunder damage nullified.",
+        "stats": {
+            "Defense": 3,
+            "Magic Defense": 33
+        },
+        "abilities": [
+            "Gamble Defense",
+            "HP+20%"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane",
+            "Freya"
+        ],
+        "where_to_find": {
+            "Purchased": [
+                "Bran Bal",
+                "Daguerreo (Disc 4)"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Adaman Vest",
+        "type": "armor",
+        "description": "Very durable vest.",
+        "effect": "Elem-Def: Fire damage halved.",
+        "stats": {
+            "Defense": 14,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Bird Killer",
+            "Stone Killer"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find": {
+            "Purchased": [
+                "Fossil Roo",
+                "Black Mage Village (Disc 2 and 3)",
+                "Madain Sari"
+            ],
+            "Stolen From": [
+                "Ralvuimago"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Aegis Gloves ",
+        "type": "arm_gear",
+        "description": "Gloves worn exclusively by knights.",
+        "stats": {
+            "Magic": 2,
+            "Evasion": 30,
+            "Magic Evasion": 10
+        },
+        "abilities": [
+            "Charge!"
+        ],
+        "equipped_by": [
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Fossil Roo"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Aloha T-Shirt",
+        "type": "armor",
+        "description": "Provides a southern, tropical feel.",
+        "stats": {
+            "Defense": 0,
+            "Magic Defense": 0
+        },
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocobo Dive Spots",
+                "Kupo Nuts"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Amethyst",
+        "type": "jewel",
+        "description": "Restores HP. It cannot be used in the field. Equip as an Add-on.",
+        "effect_when_used": "Restores an amount of HP equal to the total number of Amethyst in your inventory multiplied by 28.",
+        "abilities": [
+            "Atomos",
+            "Demi"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Reward For Defeating": [
+                "Ring Leader",
+                "Torama"
+            ],
+            "Side Quest": [
+                "Chocograph"
+            ],
+            "Synthesized": [
+                "Daguerreo",
+                "Master Synthesist / Hades",
+                "Black Mage Village (Disc 4)"
+            ],
+            "Treasure": [
+                "Alexandria (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "Ancient Aroma",
+        "type": "add_on",
+        "description": "Item that radiates a mysterious light.",
+        "effect": "Raises Shadow Elem-Atk",
+        "stats": {
+            "Strength": 2,
+            "Evasion": 2
+        },
+        "abilities": [
+            "Odin's Sword"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Freya"
+        ],
+        "where_to_find":{
+            "Treasure": [
+                "Ipsen's Castle"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "Ancient Aroma",
+        "type": "add_on",
+        "description": "Item that radiates a mysterious light.",
+        "effect": "Raises Shadow Elem-Atk",
+        "stats": {
+            "Strength": 2,
+            "Evasion": 2
+        },
+        "abilities": [
+            "Odin's Sword"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Freya"
+        ],
+        "where_to_find":{
+            "Treasure": [
+                "Ipsen's Castle"
+            ]
+        }
+    }
+]}
