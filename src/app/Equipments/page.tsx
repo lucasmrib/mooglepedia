@@ -1,9 +1,9 @@
 "use client"
 
-import useSWR from 'swr'
+import useSWR, { Fetcher }from 'swr'
 import Image from 'next/image'
 
-const fetcher = (...args) => fetch([...args]).then((res) => res.json())
+const fetcher: Fetcher<any> = (...args) => fetch([...args]).then((res) => res.json())
 
 export default function Equipments() {
 
