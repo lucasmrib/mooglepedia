@@ -66,7 +66,7 @@
     {
         "id": 3,
         "name": "Aegis Gloves ",
-        "type": "arm_gear",
+        "type": "arm",
         "description": "Gloves worn exclusively by knights.",
         "stats": {
             "Magic": 2,
@@ -152,7 +152,7 @@
     {
         "id": 6,
         "name": "Ancient Aroma",
-        "type": "add_on",
+        "type": "add-on",
         "description": "Item that radiates a mysterious light.",
         "effect": "Raises Shadow Elem-Atk",
         "stats": {
@@ -174,17 +174,19 @@
         }
     },
     {
-        "id": 6,
-        "name": "Ancient Aroma",
-        "type": "add_on",
-        "description": "Item that radiates a mysterious light.",
+        "id": 7,
+        "name": "Angel Earrings",
+        "type": "add-on",
+        "description": "Raises Holy Elem-Atk.",
         "effect": "Raises Shadow Elem-Atk",
         "stats": {
             "Strength": 2,
-            "Evasion": 2
+            "Defense": 2
         },
         "abilities": [
-            "Odin's Sword"
+            "Auto-Regen",
+            "MP+20%",
+            "Reis's Wind"
         ],
         "equipped_by": [
             "Dagger",
@@ -192,8 +194,846 @@
             "Freya"
         ],
         "where_to_find":{
+            "Side Quest": [
+                "Pluto Knights Mini Side Quest"
+            ],
+            "Synthesis": [
+                "Daguerreo"
+            ],
             "Treasure": [
-                "Ipsen's Castle"
+                "Bran Bal (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "name": "Anklet",
+        "type": "add-on",
+        "description": "Anklet adorned with a four-leaf clover that raises spirit.",
+        "stats": {
+            "Magic": 3,
+            "Spirit": 1,
+            "Evasion": 5
+        },
+        "abilities": [
+            "Counter",
+            "Healer",
+            "Locomotion"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Treno Action House"
+            ],
+            "Synthesis": [
+                "Alexandria",
+                "Daguerreo",
+                "Treno (Disc 3 and 4)",
+                "Lindblum (Disc 3 and 4)"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "Aquamarine",
+        "type": "jewel",
+        "description": "Restores HP. It cannot be used in the field. Equip as an Add-on.",
+        "effect_when_used": "Restores an amount of HP equal to the total number of Aquamarines in your inventory multiplied by 20.",
+        "abilities": [
+            "Leviathan",
+            "HP+10%"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocobo Dive Spots",
+                "Daguerreo"
+            ],
+            "Stolen From": [
+                "Quina"
+            ],
+            "Treasure": [
+                "Iifa Tree"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "name": "Bandana",
+        "type": "head",
+        "description": "Mysterious bandana that makes you light-footed.",
+        "stats": {
+            "Spirit": 1,
+            "Speed": 1,
+            "Evasion": 2,
+            "Magic Defense": 12
+        },
+        "abilities": [
+            "Insomniac",
+            "Man Eater"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Treno (Disc 2)",
+                "Cleyra",
+                "Lindblum (Disc 2)",
+                "Fossil Roo",
+                "Black Mage Village (Disc 2 and 3)"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "name": "Barbut",
+        "type": "head",
+        "description": "Headgear that raises Spirit.",
+        "stats": {
+            "Spirit": 2,
+            "Magic Defense": 9
+        },
+        "abilities": [
+            "Alert",
+            "Dragon Killer"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Burmecia",
+                "Summit Station",
+                "Treno (Disc 2)",
+                "Alexandria (Disc 3 and 4)"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "name": "Barette",
+        "type": "add-on",
+        "description": "Hair ornament enchanted with various powers, worn by women.",
+        "effect": "Raises Ice Elem-Atk.",
+        "stats": {
+            "Strength": 3,
+            "Magic": 1,
+            "Spirit": 1,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Chemist",
+            "Cura",
+            "Gamble Defense"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Freya"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocobo Hot and Cold"
+            ],
+            "Synthesized": [
+                "Alexandria",
+                "Lindblum (Disc 2 Onward)",
+                "Treno (Disc 3 and 4)",
+                "Daguerreo",
+                "Black Mage Village (Disc 2 and 3)"
+            ],
+            "Treasure": [
+                "Ipsen’s Castle"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "name": "Battle Boots",
+        "type": "add-on",
+        "description": "Combat Boots.",
+        "stats": {
+            "Strength": 2,
+            "Defense": 2,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Initiative",
+            "Mp Attack",
+            "HP+20%"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Catching Frogs"
+            ],
+            "Stolen From": [
+                "Garland",
+                "Hades"
+            ],
+            "Synthesized": [
+                "Daguerreo"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "name": "Black Belt",
+        "type": "add-on",
+        "description": "Belt that raises Strength.",
+        "effect": "Raises Wind Elem-Atk.",
+        "stats": {
+            "Strength": 2,
+            "Spirit": 2,
+            "Defense": 1
+        },
+        "abilities": [
+            "Beast Killer",
+            "Demi",
+            "HP+20%"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quests": [
+                "Stellazio Coins"
+            ],
+            "Stolen From": [
+                "Deathguise"
+            ],
+            "Synthesized": [
+                "Daguerreo",
+                "Alexandria (Disc 3 and 4)",
+                "Treno (Disc 3 and 4)",
+                "Lindblum (Disc 3 and 4)"
+            ],
+            "Treasure": [
+                "Black Mage Village (Item Shop: Ask for 'the usual')"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "name": "Black Hood",
+        "type": "head",
+        "description": "Hood from a foreign land.",
+        "effect": "Elem-Def: Fire/Thunder/Water damage halved.",
+        "stats": {
+            "Magic Defense": 27
+        },
+        "abilities": [
+            "Accuracy+",
+            "Death",
+            "Locomotion"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Esto Gaza (after reaching the Desert Palace)"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "name": "Black Robe",
+        "type": "armor",
+        "description": "Robe made for black mages.",
+        "effect": "Raises Shadow Elem-Atk.",
+        "stats": {
+            "Magic": 2,
+            "Defense": 43,
+            "Magic Defense": 4
+        },
+        "abilities": [
+            "Flare",
+            "MP+20%",
+            "Reflect x2"
+        ],
+        "equipped_by": [
+            "Quina",
+            "Vivi"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocobo Dive Spots"
+            ],
+            "Stolen From": [
+                "Lich"
+            ],
+            "Synthesized": [
+                "Daguerreo"    
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "name": "Bone Wrist",
+        "type": "arm",
+        "description": "Wristlet made from bones.",
+        "effect": "Raises Earth Elem-Atk.",
+        "stats": {
+            "Evasion": 13,
+            "Magic Evasion": 9,
+            "Strength": 1
+        },
+        "abilities": [
+            "Add Status"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Treno",
+                "Cleyra",
+                "Lindblum (Disc 2)",
+                "Daguerreo (Disc 3)",
+                "Alexandria"
+            ],
+            "Stolen From": [
+                "Ralvurahva"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "name": "Bracer",
+        "type": "arm",
+        "description": "Bracer used by gamblers.",
+        "effect": "Raises Wind Elem-Atk.",
+        "stats": {
+            "Strength": 1,
+            "Evasion": 35,
+            "Magic Evasion": 18
+        },
+        "abilities": [
+            "Add Status",
+            "Power Throw"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Synthesized": [
+                "Black Mage Village (Disc 4)"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "name": "Brave Suit",
+        "type": "armor",
+        "description": "Extremely durable suit.",
+        "effect": "Raises Fire Elem-Atk.",
+        "stats": {
+            "Spirit": 1,
+            "Defense": 42
+        },
+        "abilities": [
+            "Auto-Regen",
+            "Restore HP"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Synthesized": [
+                "Black Mage Village (Disc 4)"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "Brigandine",
+        "type": "armor",
+        "description": "Clothes that raise Strength.",
+        "stats": {
+            "Strength": 1,
+            "Defense": 20
+        },
+        "abilities": [
+            "Ability Up",
+            "Return Magic"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Alexandria",
+                "Treno (Disc 3 and 4)",
+                "Lindblum (Disc 3 and 4)",
+                "Oeilvert",
+                "Desert Palace"
+            ],
+            "Stolen From": [
+                "Soulcage"
+            ],
+            "Treasure": [
+                "Iifa Tree"
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "name": "Bronze Armor",
+        "type": "armor",
+        "description": "Armor made of bronze.",
+        "effect": "Elem-Def: Wind damage halved.",
+        "stats": {
+            "Defense": 9
+        },
+        "abilities": [
+            "Bird Killer"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Equipped when joins the team": "Steiner",
+            "Purchased": [
+                "Dali"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "name": "Bronze Gloves",
+        "type": "arm",
+        "description": "Gloves made of bronze.",
+        "stats": {
+            "Spirit": 1,
+            "Evasion": 8,
+            "Magic Evasion": 2
+        },
+        "abilities": [
+            "Antibody"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Dali",
+                "Lindblum"
+            ],
+            "Treasure": [
+                "Evil Forest",
+                "Theater Ship"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "name": "Bronze Helm",
+        "type": "head",
+        "description": "Helm worn by soldier trainees.",
+        "effect": "Elem-Def: Thunder damage halved.",
+        "stats": {
+            "Magic Defense": 6
+        },
+        "abilities": [
+            "Bug Killer"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Dali"
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "name": "Bronze Vest",
+        "type": "armor",
+        "description": "Plate made of bronze.",
+        "stats": {
+            "Spirit": 1,
+            "Defense": 9,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Jelly"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Burmecia",
+                "Summit Station",
+                "Treno (Disc 2)",
+                "Black Mage Village (Disc 2 and 3)",
+                "Lindblum (Disc 2)"
+            ],
+            "Treaure": [
+                "Lindblum",
+                "Gizamaluke's Grotto"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "name": "Cachusha",
+        "type": "add-on",
+        "description": "Hair ornament enchanted with various powers, worn by women.",
+        "effect": "Raises Fire Elem-Atk.",
+        "stats": {
+            "Speed": 1,
+            "Magic": 2,
+            "Spirit": 1,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Ability Up",
+            "Bright Eyes",
+            "Life"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Freya"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocobo Hot and Cold"
+            ],
+            "Synthesized": [
+                "Alexandria",
+                "Treno",
+                "Daguerreo",
+                "Lindblum (Disc 2 Onward)",
+                "Black Mage Village (Disc 2 and 3)"
+            ],
+            "Treasure": [
+                "Dali (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "Cachusha",
+        "type": "armor",
+        "description": "Armor protected by extraordinary powers.",
+        "stats": {
+            "Speed": 1,
+            "Spirit": 1,
+            "Defense": 39,
+            "Magic Defense": 1
+        },
+        "abilities": [
+            "Auto-Regen"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 4)"
+            ],
+            "Stolen From": [
+                "Kuja"
+            ],
+            "Treasure": [
+                "Pandemonium"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "name": "Chain Mail",
+        "type": "armor",
+        "description": "Armor made with chains.",
+        "effect": "Elem-Def: Earth damage halved.",
+        "stats": {
+            "Defense": 12
+        },
+        "abilities": [
+            "Bird Killer",
+            "HP+10%"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Treno (Disc 2)",
+                "Lindblum (Disc 2)",
+                "Cleyra"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "name": "Chain Plate",
+        "type": "armor",
+        "description": "Plate that provides brimming strength.",
+        "effect": "Elem-Def: Earth damage halved.",
+        "stats": {
+            "Spirit": 1,
+            "Defense": 10
+        },
+        "abilities": [
+            "Devil Killer"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Treno (Disc 2)",
+                "Cleyra",
+                "Lindblum (Disc 2)",
+                "Fossil Roo",
+                "Black Mage Village (Disc 2 and 3)"
+            ],
+            "Stolen From": [
+                "Beatrix"
+            ],
+            "Treasure": [
+                "Gargan Roo"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "name": "Chimera Armlet",
+        "type": "arm",
+        "description": "Armlet adorned with Chimera wings.",
+        "effect": "Elem-Def: Holy damage nullified.",
+        "stats": {
+            "Evasion": 22,
+            "Magic Evasion": 14
+        },
+        "abilities": [
+            "Add Status",
+            "Mug"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Lindblum (Disc 3 and 4)",
+                "Oeilvert",
+                "Desert Palace",
+                "Daguerreo (Disc 3)"
+            ],
+            "Treasure": [
+                "Treno",
+                "Lindblum (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "name": "Circlet",
+        "type": "head",
+        "description": "Circlet protected by magic.",
+        "effect": "Elem-Def: Earth damage nullified.",
+        "stats": {
+            "Magic Defense": 51
+        },
+        "abilities": [
+            "Clear Headed",
+            "Jelly"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Chocographs",
+                "Knight's House Monster Challenge"
+            ],
+            "Synthesized": [
+                "Black Mage Village (Disc 4)"
+            ]
+        }
+    },
+    {
+        "id": 31,
+        "name": "Coral Ring",
+        "type": "add-on",
+        "description": "Ring adorned by corals.",
+        "effect": "Absorbs Thunder Elem-Atk.",
+        "stats": {
+            "Spirit": 2,
+            "Magic Evasion": 3
+        },
+        "abilities": [
+            "Insomniac",
+            "Lancer",
+            "Man Eater"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Festival of the Hunt Mini-Side Quest"
+            ],
+            "Synthesized": [
+                "Alexandria",
+                "Daguerreo",
+                "Treno",
+                "LindBlum (Disc 2 Onward)",
+                "Black Mage Village (Disc 2 and 3)"
+            ]
+        }
+    },
+    {
+        "id": 32,
+        "name": "Coronet",
+        "type": "head",
+        "description": "Coronet that radiates a mysterious light.",
+        "effect": "Elem-Def: Wind damage nullified.",
+        "stats": {
+            "Defense": 1,
+            "Magic Defense": 35
+        },
+        "abilities": [
+            "Man Eater",
+            "Return Magic"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo",
+                "Bran Bal"
+            ],
+            "Treasure": [
+                "Terra"
+            ]
+        }
+    },
+    {
+        "id": 33,
+        "name": "Cotton Robe",
+        "type": "armor",
+        "description": "Ordinary robe.",
+        "stats": {
+            "Strength": 1,
+            "Magic": 1,
+            "Magic Defense": 2,
+            "Defense": 10,
+            "Magic Defense": 2
+        },
+        "abilities": [
+            "Chemist",
+            "Shell"
+        ],
+        "equipped_by": [
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi"
+        ],
+        "where_to_find":{
+            "Side Quests": [
+                "Chocographs"
+            ],
+            "Synthesized": [
+                "Lindblum",
+                "Treno",
+                "Black Mage Village (Disc 2 and 3)",
+                "Alexandria",
+                "Daguerreo"
             ]
         }
     }
