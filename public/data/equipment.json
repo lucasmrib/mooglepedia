@@ -1011,8 +1011,7 @@
             "Strength": 1,
             "Magic": 1,
             "Magic Defense": 2,
-            "Defense": 10,
-            "Magic Defense": 2
+            "Defense": 10
         },
         "abilities": [
             "Chemist",
@@ -1034,6 +1033,352 @@
                 "Black Mage Village (Disc 2 and 3)",
                 "Alexandria",
                 "Daguerreo"
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "name": "Cross Helm",
+        "type": "head",
+        "description": "Helm that raises Strength.",
+        "stats": {
+            "Strength": 1,
+            "Magic Defense": 16
+        },
+        "abilities": [
+            "Devil Killer",
+            "MP Attack"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Oeilvert",
+                "Esto Gaza (after reaching the Desert Palace)",
+                "Esto Gaza",
+                "Ipsen’s Castle"
+            ]
+        }
+    },
+    {
+        "id": 35,
+        "name": "Dark Gear",
+        "type": "armor",
+        "description": "Gear that raises Spirit.",
+        "stats": {
+            "Strength": 3,
+            "Magic Defense": 37
+        },
+        "abilities": [
+            "Clear Headed",
+            "Jelly"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Black Mage Village (Disc 4)"
+            ],
+            "Stolen From": [
+                "Garland"
+            ]
+        }
+    },
+    {
+        "id": 36,
+        "name": "Dark Hat",
+        "type": "head",
+        "description": "Old hat, steeped in legend.",
+        "effect": "Elem-Def: Ice damage nullified.",
+        "stats": {
+            "Magic Defense": 21
+        },
+        "abilities": [
+            "High Tide",
+            "Jelly"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Black Mage Village (Disc 4)",
+                "Desert Palace",
+                "Lindblum (Disc 3 and 4)"
+            ]
+        }
+    },
+    {
+        "id": 37,
+        "name": "Dark Matter",
+        "type": "add-on",
+        "description": "Deals damage to the target. Equip as an Add-on.",
+        "stats": {
+            "Strength": 3,
+            "Magic": 2
+        },
+        "abilities": [
+            "Odin"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Side Quest": [
+                "Treno Auction House"
+            ],
+            "Stolen From": [
+                "Ozma"
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "Defense Gloves",
+        "type": "arm",
+        "description": "Protects you from various attacks.",
+        "effect": "Elem-Def: Fire/Ice/Thunder damage halved.",
+        "stats": {
+            "Defense": 1,
+            "Magic Defense": 1,
+            "Evasion": 25,
+            "Magic Evasion": 20
+        },
+        "abilities": [
+            "HP+20%"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo",
+                "Bran Bal"
+            ]
+        }
+    },
+    {
+        "id": 39,
+        "name": "Demon’s Mail",
+        "type": "arm",
+        "description": "Armor made in the dark world.",
+        "effect": "Absorbs Shadow Elem-Atk.Raises Shadow Elem-Atk.",
+        "stats": {
+            "Defense": 27
+        },
+        "abilities": [
+            "High Tide"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 3)",
+                "Bran Bal",
+                "Ipsen’s Castle"
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "Demon’s Vest",
+        "type": "arm",
+        "description": "Armor made in the dark world.",
+        "effect": "Elem-Def: Shadow damage halved.",
+        "stats": {
+            "Magic": 1,
+            "Defense": 31
+        },
+        "abilities": [
+            "Auto Potion",
+            "Devil Killer",
+            "Locomotion"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 3)",
+                "Bran Bal",
+                "Ipsen’s Castle"
+            ]
+        }
+    },
+    {
+        "id": 41,
+        "name": "Desert Boots",
+        "type": "arm",
+        "description": "Boots with good traction.",
+        "effect": "Elem-Def: Earth damage reduces by 50%.",
+        "stats": {
+            "Magic": 1,
+            "Spirit": 1,
+            "Evasion": 2
+        },
+        "abilities": [
+            "Flee Gil",
+            "Protect",
+            "Scan"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Synthesized": [
+                "Lindblum",
+                "Black Mage Village (Disc 2 and 3)",
+                "Alexandria (after obtaining the Blue Narciss)"
+            ],
+            "Treasure": [
+                "Cleyra's Trunk"
+            ]
+        }
+    },
+    {
+        "id": 42,
+        "name": "Diamond",
+        "type": "Jewel",
+        "description": "Restores HP. It cannot be used in the field. Equip as an Add-on.",
+        "effect_when_used": "Restores an amount of HP equal to the total number of Diamonds in your inventory multiplied by 36.",
+        "abilities": [
+            "Body Temp",
+            "Distract"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Freya",
+            "Quina",
+            "Steiner",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Stiltzkin"
+            ],
+            "Side Quest": [
+                "Friendly Monsters",
+                "Chocographs"
+            ],
+            "Treasure": [
+                "Conde Petie"
+            ]
+        }
+    },
+    {
+        "id": 43,
+        "name": "Diamond Armor",
+        "type": "armor",
+        "description": "Armor made of diamond.",
+        "stats": {
+            "Strength": 1,
+            "Magic": 1,
+            "Defense": 33,
+            "Magic Defense": 2
+        },
+        "abilities": [
+            "Ability Up"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 44,
+        "name": "Diamond Gloves",
+        "type": "arm",
+        "description": "Gloves made of diamond.",
+        "effect": "Elem-Def: Water damage nullified.",
+        "stats": {
+            "Evasion": 19,
+            "Magic Evasion": 13
+        },
+        "abilities": [
+            "Ability Up",
+            "Jelly"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Oeilvert",
+                "Desert Palace",
+                "Esto Gaza (after reaching the Desert Palace)"
+            ],
+            "Side Quests": [
+                "Chocographs"
+            ]
+        }
+    },
+    {
+        "id": 45,
+        "name": "Diamond Helm",
+        "type": "head",
+        "description": "Helm made of diamond.",
+        "stats": {
+            "Spirit": 1,
+            "Magic Defense": 20
+        },
+        "abilities": [
+            "Accuracy+",
+            "Insomniac"
+        ],
+        "equipped_by": [
+            "Freya",
+            "Steiner"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 3)",
+                "Ipsen’s Castle"
             ]
         }
     }
