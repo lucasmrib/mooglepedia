@@ -53,7 +53,7 @@ export function Navbar(){
             {hoveredItem === item.name && (
               <Image
               	className="absolute top-2 left-2"
-              	src="/hereIcon.png"
+              	src="/img/hereIcon.png"
               	width={50}
               	height={60}
               	alt="Here Icon"
