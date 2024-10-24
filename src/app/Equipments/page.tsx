@@ -14,7 +14,7 @@ export default function Equipments() {
 
   return (
     <div className="mx-14 mb-16 w-full h-fit text-white space-y-8">
-      {data.equipments.map((equipment) => (
+      {data.equipments.map((equipment: any) => (
         <div key={equipment.id} className="rounded-md border-4 border-gray-300 space-y-4 bg-[#5e605f]">
           <header className="font-pixel inline-flex items-center gap-4 w-full pl-8 pr-8 p-4 bg-[#505251] text-sm">
             <Image
