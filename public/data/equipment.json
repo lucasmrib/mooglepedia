@@ -1381,5 +1381,133 @@
                 "Ipsen’s Castle"
             ]
         }
+    },
+    {
+        "id": 46,
+        "name": "Dragon Mail",
+        "type": "armor",
+        "description": "Armor made from a dragon’s scales.",
+        "stats": {
+            "Strength": 1,
+            "Defense": 42
+        },
+        "abilities": [
+            "High Jump"
+        ],
+        "equipped_by": [
+            "Freya"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Daguerreo (Disc 4)"
+            ],
+            "Stolen From": [
+                "Silver Dragon"
+            ]
+        }
+    },
+    {
+        "id": 47,
+        "name": "Dragon Wrist",
+        "type": "arm",
+        "description": "Wristlet made from dragon bones.",
+        "effect": "Elem-Def: Shadow damage reduced by 50%.",
+        "stats": {
+            "Spirit": 1,
+            "Evasion": 29,
+            "Magic Evasion": 12
+        },
+        "abilities": [
+            "Jelly",
+            "Lancer"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Bran Bal",
+                "Daguerreo (Disc 4)"
+            ],
+            "Stolen From": [
+                "Nova Dragon"
+            ],
+            "Treasure": [
+                "Terra"
+            ]
+        }
+    },
+    {
+        "id": 48,
+        "name": "Egoist’s Armlet",
+        "type": "arm",
+        "description": "Armlet made in the dark world.",
+        "effect": "Elem-Def: Shadow damage nullified.",
+        "stats": {
+            "Evasion": 20,
+            "Magic Evasion": 20
+        },
+        "abilities": [
+            "Beast Killer",
+            "Level Up"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Oeilvert",
+                "Desert Palace",
+                "Esto Gaza (after reaching the Desert Palace)",
+                "Daguerreo"
+            ],
+            "Treasure": [
+                "Lindblum (Disc 3)"
+            ]
+        }
+    },
+    {
+        "id": 48,
+        "name": "Egoist’s Armlet",
+        "type": "arm",
+        "description": "Armlet made in the dark world.",
+        "effect": "Elem-Def: Shadow damage nullified.",
+        "stats": {
+            "Evasion": 20,
+            "Magic Evasion": 20
+        },
+        "abilities": [
+            "Beast Killer",
+            "Level Up"
+        ],
+        "equipped_by": [
+            "Amarant",
+            "Dagger",
+            "Eiko",
+            "Quina",
+            "Vivi",
+            "Zidane"
+        ],
+        "where_to_find":{
+            "Purchased": [
+                "Oeilvert",
+                "Desert Palace",
+                "Esto Gaza (after reaching the Desert Palace)",
+                "Daguerreo"
+            ],
+            "Treasure": [
+                "Lindblum (Disc 3)"
+            ]
+        }
     }
 ]}
