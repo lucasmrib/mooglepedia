@@ -31,7 +31,7 @@ const navItems = [
 export function Navbar(){
 
 	let pathname = usePathname() || "/";
-	const [hoveredItem, setHoveredItem] = useState<string>(null);
+	const [hoveredItem, setHoveredItem] = useState<string>('');
 
 	return(
 		<nav className="font-pixel flex flex-col sticky top-8 ml-14 w-auto h-fit bg-[#505251] rounded-md border-4 border-gray-300 text-white text-sm">
@@ -48,7 +48,7 @@ export function Navbar(){
             data-active={isActive}
             href={item.path}
             onMouseOver={() => setHoveredItem(item.name)}
-            onMouseLeave={() => setHoveredItem(null)}
+            onMouseLeave={() => setHoveredItem('')}
           >
             {hoveredItem === item.name && (
               <Image
