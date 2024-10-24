@@ -47,8 +47,8 @@ export function Navbar(){
             }`}
             data-active={isActive}
             href={item.path}
-            onMouseOver={() => setHoveredItem(item.name)}
-            onMouseLeave={() => setHoveredItem(null)}
+            onMouseOver={() => setHoveredItem(true)}
+            onMouseLeave={() => setHoveredItem(false)}
           >
             {hoveredItem === item.name && (
               <Image
